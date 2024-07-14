@@ -1,0 +1,30 @@
+@if(result.length >0){
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Investment Value</th>
+      <th>Interest (Year)</th>
+      <th>Total Interest</th>
+      <th>Invested Capital</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of result; track item) {
+    <tr>
+      <td>{{ item.year }}</td>
+      <td>
+        {{ item.totalAmountInvested | currency : "USD" : "symbol" : "1.2-2" }}
+      </td>
+      <td>{{ item.interest | currency : "USD" : "symbol" : "1.2-2" }}</td>
+      <td>
+        {{ item.totalAmountInvested | currency : "USD" : "symbol" : "1.2-2" }}
+      </td>
+      <td>{{ item.valueEndOfYear | currency : "USD" : "symbol" : "1.2-2" }}</td>
+    </tr>
+    }
+  </tbody>
+</table>
+} @else {
+<p class="center">Please Enter Value</p>
+}

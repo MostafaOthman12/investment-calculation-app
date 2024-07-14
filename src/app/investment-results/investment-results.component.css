@@ -1,0 +1,45 @@
+table {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  table-layout: fixed;
+  border-spacing: 1rem;
+  text-align: right;
+  background-color: #222;
+  border-collapse: separate;
+}
+
+table thead {
+  font-size: 0.7rem;
+  color: #83e6c0;
+  background-color: #333;
+}
+
+table tbody {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.85rem;
+  color: #c2e9e0;
+}
+
+td {
+  padding: 0.5rem;
+  border: 1px solid #444;
+}
+
+th,
+td {
+  padding: 12px 15px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #2e2e2e;
+}
+
+tbody tr:hover {
+  background-color: #444;
+}
+
+.center {
+  text-align: center;
+  color: #c2e9e0;
+}
